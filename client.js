@@ -1,8 +1,9 @@
 const net = require("net");
+const { ip, port } = require("./constants");
 const connect = function () {
   const conn = net.createConnection({
-    host:  'localhost', //IP Address here
-    port: 50541,
+    host: ip, //IP Address here
+    port: port,
   });
 
   // interpret incoming data as text
