@@ -34,6 +34,12 @@ const handleUserInput = function (key) {
     clearInterval(movementY);
     movementX = setInterval(() => {connection.write("Move: right")}, 50);
   }
+  if (key === 'h') {
+    connection.write("Say: Hello");
+  }
+  if (key === 'm') {
+    connection.write("Say: maan");
+  }
 };
 
 module.exports = {
