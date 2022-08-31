@@ -14,9 +14,7 @@ const connect = function () {
     console.log("Successfully connected!!");
     conn.write("Name: SPK");
   })
-  // conn.on('connect', () => {
-  //   setInterval(() => {conn.write("Move: up")}, 50);
-  // })
+  
 
   return conn;
 };
